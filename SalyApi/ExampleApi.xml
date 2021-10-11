@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExampleApi</name>
+    </assembly>
+    <members>
+        <member name="M:ExampleApi.Controllers.AccountController.login(ExampleApi.Models.LoginModel)">
+            <summary>
+            Returns token.
+            </summary>
+            <response code="200">Success. Returns user's token.</response>
+        </member>
+        <member name="M:ExampleApi.Controllers.OrderController.Post(ExampleApi.Models.Order)">
+            <response code="200">Success. Returns nexo order id.</response>
+        </member>
+        <member name="M:ExampleApi.Controllers.OrderController.Get">
+            <summary>
+            Pole import_status zwraca jedną z trzech wartoiści: SUCCESS, WAITING lub ERROR. Chciałym aby ten import_status był dobrze widoczne przy wyświetleniu zamówienia. Gdy import_status == "ERROR", wtedy w error_description pojawi się opis błędu, który też musiałby być wyświetlony. Gdy status będzie różny
+            od "ERROR", wtedy w error_description będzie null.
+            </summary>
+        </member>
+        <member name="P:ExampleApi.Models.Lane.product_code">
+            <example>5908453487954</example>
+        </member>
+        <member name="P:ExampleApi.Models.Lane.price_netto">
+            <example>12.98</example>
+        </member>
+        <member name="P:ExampleApi.Models.Lane.quantity">
+            <example>9</example>
+        </member>
+        <member name="P:ExampleApi.Models.Lane.vat">
+            <example>23</example>
+        </member>
+        <member name="P:ExampleApi.Models.Lane.currency">
+            <example>PLN</example>
+        </member>
+        <member name="P:ExampleApi.Models.Order.client_id">
+            <example>4</example>
+        </member>
+        <member name="P:ExampleApi.Models.Order.Example_order_id">
+            <example>13</example>
+        </member>
+        <member name="P:ExampleApi.Models.Order.value_total_netto">
+            <example>34.25</example>
+        </member>
+        <member name="P:ExampleApi.Models.Order.value_total_brutto">
+            <example>37.48</example>
+        </member>
+        <member name="P:ExampleApi.Models.Order.payment_type">
+            <example>PayU</example>
+        </member>
+        <member name="P:ExampleApi.Models.Order.document_type">
+            <example>ZK</example>
+        </member>
+        <member name="P:ExampleApi.Models.Order.delivery_type">
+            <example>0</example>
+        </member>
+        <member name="P:ExampleApi.Models.Order.currency">
+            <example>PLN</example>
+        </member>
+        <member name="P:ExampleApi.Models.Order.comment">
+            <example>Comment</example>
+        </member>
+        <member name="P:ExampleApi.Models.OrderGet.client_id">
+            <example>4</example>
+        </member>
+        <member name="P:ExampleApi.Models.OrderGet.Example_order_id">
+            <example>13</example>
+        </member>
+        <member name="P:ExampleApi.Models.OrderGet.value_total_netto">
+            <example>34.25</example>
+        </member>
+        <member name="P:ExampleApi.Models.OrderGet.value_total_brutto">
+            <example>37.48</example>
+        </member>
+        <member name="P:ExampleApi.Models.OrderGet.payment_type">
+            <example>PayU</example>
+        </member>
+        <member name="P:ExampleApi.Models.OrderGet.document_type">
+            <example>ZK</example>
+        </member>
+        <member name="P:ExampleApi.Models.OrderGet.delivery_type">
+            <example>0</example>
+        </member>
+        <member name="P:ExampleApi.Models.OrderGet.currency">
+            <example>PLN</example>
+        </member>
+        <member name="P:ExampleApi.Models.OrderGet.comment">
+            <example>Comment</example>
+        </member>
+        <member name="P:ExampleApi.Models.OrderGet.import_status">
+            <example>SUCCESS,WAITING,ERROR</example>
+        </member>
+        <member name="P:ExampleApi.Models.OrderIdResponse.OrderIdNexo">
+            <example>5</example>
+        </member>
+        <member name="P:ExampleApi.Repository.LoginExample.data">
+            <example>HereWillBeYourToken</example>
+        </member>
+    </members>
+</doc>
